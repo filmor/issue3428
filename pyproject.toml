@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "issue3428"
+version = "0.1.0"
+description = ""
+authors = ["Benedikt Reinartz <filmor@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.build]
+generate-setup-file = false
+script = "build.py"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "print_color"]
+build-backend = "poetry.core.masonry.api"
